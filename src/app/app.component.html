@@ -1,0 +1,2 @@
+<itemList *ngIf="!detailMode" [items]=pokemonItemList (outputId)="showDetail($event)"></itemList>
+<itemDetail *ngIf="detailMode" [item]=pokemonDetail (hideDetail)="hideDetail()"></itemDetail>

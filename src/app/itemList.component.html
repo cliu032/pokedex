@@ -1,0 +1,3 @@
+<ng-container *ngFor="let item of items">
+  <itemContainer [item]=item (outputId)="showDetail($event)"></itemContainer>
+</ng-container>
